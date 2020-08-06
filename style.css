@@ -128,12 +128,12 @@ body{
   border-bottom: 2px solid white;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .project {
-    width: 200px;
-    height: 350px;
+    width: 250px;
+    height: 400px;
   }
   .project-image{
-    width: 200px;
+    width: 250px;
   }
 }
