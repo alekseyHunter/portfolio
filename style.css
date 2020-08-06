@@ -128,7 +128,7 @@ body{
   border-bottom: 2px solid white;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-device-width: 900px) {
   .project {
     width: 300px;
     height: 450px;
