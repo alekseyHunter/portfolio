@@ -4,50 +4,121 @@
 	<title>My portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<main>
-		<div>
-			<img class="icon" src="icon.jpg">
+		<div class="profile">
+			<img class="profile-icon" src="icon.jpg">
+
+			<div class="profile-info">
+				<h1>Aleksey Okhotnichenko</h1>
+
+				<h2>Programmer</h2>
+			</div>
 		</div>
 
 		<div class="competitions">
 
 			<div class="competition">
-				<div class="header">Android-development</div>
+				<div class="competition-content">
+					<h2 class="header">Web-development</h2>
 
-				<ul>
-					<li>
-						<div class="project">
-							<h2 class="project-name">
+					<ul class="projects">
+						<li>
+							<h3 class="project-name">
+								Game "Guess the number"
+							</h3>
+						</li>
+						<li>
+							<h3 class="project-name">
+								The Library "Atos"
+							</h3>
+						</li>
+						<li>
+							<h3 class="project-name">
+								Chat
+							</h3>
+						</li>
+					</ul>
+				</div>
+
+				<div class="competition-show-more" id="web">
+					Show more
+				</div>				
+			</div>
+				
+			<div class="competition">
+				<div class="competition-content">
+					<h2 class="header">Android-development</h2>
+
+					<ul class="projects">
+						<li>
+							<h3 class="project-name">
+								Reader's diary
+							</h3>
+						</li>
+						<li>
+							<h3 class="project-name">
 								My Vodomers
-							</h2>
+							</h3>
+						</li>
+						<li>
+							<h3 class="project-name">
+								Self-motivation
+							</h3>
+						</li>
+					</ul>
+				</div>
 
-							<div class="project-desc">
-								This is my first project, which maded the all my knowledge.
-							</div>
-
-							<div class="project-show-more">
-								Show more
-							</div>
-
-							<div class="project-info">
-								This project created in winter 2020.  
-							</div>
-						</div>
-					</li>
-				</ul>
+				<div class="competition-show-more" id="android">
+					Show more
+				</div>				
 			</div>
 				
 			<div class="competition">
-				<div class="header">Web-development</div>
-			</div>
-				
-			<div class="competition">
-				<div class="header">Desctop-development</div>
+				<div class="competition-content">
+					<h2 class="header">Desktop-development</h2>
+
+					<ul class="projects">
+						<li>
+							<h3 class="project-name">
+								Tic-Tac-Toe
+							</h3>
+						</li>
+						<li>
+							<h3 class="project-name">
+								World Skills 2018
+							</h3>
+						</li>
+						<li>
+							<h3 class="project-name">
+								World Skills 2019
+							</h3>
+						</li>
+					</ul>
+				</div>
+
+				<div class="competition-show-more" id="desktop">
+					Show more
+				</div>				
 			</div>
 
 		</div>
 	</main>
 </body>
+
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+	$("#web").on("click", function () {
+		window.location.assign("competitions/web.html");
+	});
+	$("#android").on("click", function () {
+		window.location.assign("competitions/android.html");
+	});
+	$("#desktop").on("click", function () {
+		window.location.assign("competitions/desktop.html");
+	});	
+</script>
+
 </html>

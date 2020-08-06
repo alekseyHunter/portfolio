@@ -1,5 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body{
-	background: #EEE;
+	background: #DDD;
 }
 
 .main {
@@ -8,33 +13,81 @@ body{
     align-items: center;
 }
 
-.profile-image {
+.profile {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 32px;
 }
 
-.icon {
+.profile-icon {
 	border-radius: 50%;
-	width: 50%;
-	height: 50%;
+	width: 256px;
+	height: 256px;
+}
+
+.profile-info{
+  text-align: center;
 }
 
 .competitions {
 	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .competition {
-    background: gray;
+    background: lightgray;
     border-radius: 5px;
   	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   	transition: 0.3s;
-  	
     width: 300px;
     height: 500px;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.competition-content {
+  flex: 1 0 auto;
+}
+
+.competition-show-more:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  background: royalblue;
+}
+
+.competition-show-more{
+    background: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+    margin: 16px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 .header {
+  text-align: center;
 	color: white;
-	font-size: bold;
+  border-bottom: 1px solid;
+  padding: 16px;
+}
+
+.projects{
+  list-style-type: none;
+  margin: 16px;
+}
+
+.projects>li{
+  border-bottom: 1px solid;
+  padding: 8px;
+}
+
+.project-info{
+  display: none;
 }
