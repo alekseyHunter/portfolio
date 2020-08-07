@@ -135,6 +135,10 @@ body{
   background: white;
 }
 
+.project>.project-name{
+  color: black;
+}
+
 .project-name{
   margin: 8px;
   text-align: center;
